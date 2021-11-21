@@ -1,8 +1,76 @@
-@import 'wars';
+@import 'vars';
 @import 'fonts';
 @import 'nullstyle';
 @import 'global';
 
+.header {
+  padding: 48px 15px 45px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.menu {
+  &__list {
+    color: #436372;
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    margin-left: 30px;
+  }
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+  }
+}
+.user-nav {
+  display: flex;
+  align-items: center;
+  &__link:nth-child(1){
+    width: 50px;
+    height: 50px;
+    padding: 18px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+  &__link:nth-child(2){
+    width: 90px;
+    height: 50px;
+    padding: 18px 30px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #fcd7b6;
+    margin-left: 30px;
+  }
+  &__link:nth-child(3){
+    width: 90px;
+    height: 50px;
+    padding: 18px 30px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #fcd7b6;
+    margin-right: 30px;
+  }
+  &__link{
+    position: relative;
+  }
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 10px;
+    left: 40px;
+    font-size: 10px;
+    line-height: 16px;
+    color: #243f4d;
+    text-align: center;
+    @extend %dmsans-400;
+  }
+}
 
 
 
