@@ -1,0 +1,21 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  color: #243f4d;
+  font-size: 16px;
+  line-height: 20px;
+  @extend %dmsans-400;
+}
+.main{
+  flex-grow: 1;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
