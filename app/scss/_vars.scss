@@ -1,3 +1,9 @@
+%btn{
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 23px 19px 23px 25px;
+}
 
 %dmsans-400{
   font-family: 'DMSans-Regular', sans-serif;
