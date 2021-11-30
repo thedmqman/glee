@@ -220,6 +220,52 @@
     }
   }
 }
+.main-info {
+  background-color: #fef7f0;
+  &__wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__item{
+    padding: 45px 0;
+    margin-left: 75px;
+    position: relative;
+  }
+  &__item::before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+  &__item--sup::before{
+    background-image: url(../images/icons/sup.svg);
+    left: -75px;
+    top: 60px;
+  }
+  &__item--del::before{
+    background-image: url(../images/icons/del.svg);
+  }
+  &__item--pay::before{
+    background-image: url(../images/icons/pay.svg);
+  }
+  &__item + .main-info__item{
+    border-left: 1px solid #e8e4df;
+    padding-left: 230px;
+  }
+  &__tittle {
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  &__text {
+    max-width: 215px;
+    line-height: 30px;
+  }
+}
 
 
 
