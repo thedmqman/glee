@@ -221,7 +221,7 @@
   }
 }
 .main-info {
-  background-color: #fef7f0;
+  @extend %bg;
   &__wrapper{
     display: flex;
     justify-content: space-evenly;
@@ -266,6 +266,111 @@
     line-height: 30px;
   }
 }
+.products {
+  padding: 70px 0 100px;
+  &__filter {
+    text-align: center;
+  }
+  &__filter-tittle {
+    margin-bottom: 30px;
+  }
+  &__filter-btn {
+    margin-bottom: 80px;
+  }
+  &__btn {
+    @extend %dmsans-700;
+    font-size: 16px;
+    background-color: transparent;
+    color: #8b8b8b;
+    transition: all .5s;
+  }
+  &__btn + .products__btn{
+    margin-left: 30px;
+  }
+  .mixitup-control-active{
+    color: #000;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &__item {
+    width: 270px;
+    height: 380px;
+    padding: 35px 15px 35px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item-tittle {
+    @extend %dmsans-500;
+    line-height: 40px;
+    color: #243f4d;
+    margin-top: auto;
+  }
+  &__item-prise {
+    @extend %dmsans-700;
+    line-height: 40px;
+    color: #a3bbc8;
+  }
+  &__popular {
+    margin-top: 185px;
+    background-color: #feefe2;
+    position: relative;
+  }
+  &__popular::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    left: 50%;
+    top: 0;
+  }
+  &__popular-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;   
+  }
+  &__popular-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  &__popular-item + .products__popular-item{
+    padding-left: 100px;
+  }
+  &__popular-img {
+    margin-top: -100px;
+  }
+  &__popular-item-content {
+    color: #436372;
+    }
+  &__popular-tittle {
+    @extend %dmsans-700;
+    font-size: 25px;
+    line-height: 32px;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  &__popular-text {
+    @extend %rubik-400;
+    line-height: 30px;
+    margin-bottom: 32px;
+  }
+  &__popular-link{
+    background-color: transparent;
+    @extend %btn;
+    border: 1px solid #436372;
+    border-radius: 5px;
+    & span{
+      margin-left: 40px;
+    }
+  }
+}
 
 
 
@@ -273,3 +378,5 @@
 
 
 @import 'media';
+
+

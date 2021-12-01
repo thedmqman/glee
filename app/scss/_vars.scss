@@ -1,9 +1,3 @@
-%btn{
-    @extend %rubik-500;
-    font-size: 15px;
-    line-height: 12px;
-    padding: 23px 19px 23px 25px;
-}
 
 %dmsans-400{
   font-family: 'DMSans-Regular', sans-serif;
@@ -28,4 +22,16 @@
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+%btn{
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 23px 19px 23px 25px;
+}
+%bg{
+  background-color: #fef7f0;
+}
+%tittle{
+  color: #243f4d;
 }

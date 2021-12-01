@@ -8,4 +8,5 @@ $(function () {
     autoplaySpeed: 2000
   });
 
+  var mixer = mixitup('.products__items');
 });

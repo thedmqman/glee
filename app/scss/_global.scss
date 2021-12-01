@@ -19,8 +19,13 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
-.container {
-  max-width: 1170px;
+.container-large {
+  max-width: 1570px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.tittle{
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 40px;
 }
