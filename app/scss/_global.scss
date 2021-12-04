@@ -19,3 +19,26 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-large {
+  max-width: 1570px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.tittle{
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 40px;
+}
+.filter-btn {
+  @extend %dmsans-700;
+  font-size: 16px;
+  background-color: transparent;
+  color: #8b8b8b;
+  transition: all .5s;
+}
+.filter-btn + .filter-btn{
+  margin-left: 30px;
+}
+.mixitup-control-active{
+  color: #000;
+}
