@@ -8,5 +8,24 @@ $(function () {
     autoplaySpeed: 2000
   });
 
-  var mixer = mixitup('.products__items');
+  // $('.products__items').mixitup({
+  //   selectors: {
+  //     filter: '.filter-1'
+  //   }
+  // });
+
+  var mixer = mixitup('.products__items',{
+    selectors: {
+      target: '.products__item',
+      control: '.filter-1'
+    }
+  });
+
+  var mixer = mixitup('.new__items',{
+    selectors: {
+      target: '.new__item',
+      control: '.filter-2'
+    }
+  });
+
 });
