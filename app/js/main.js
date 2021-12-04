@@ -8,12 +8,6 @@ $(function () {
     autoplaySpeed: 2000
   });
 
-  // $('.products__items').mixitup({
-  //   selectors: {
-  //     filter: '.filter-1'
-  //   }
-  // });
-
   var mixer = mixitup('.products__items',{
     selectors: {
       target: '.products__item',
