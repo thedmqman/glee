@@ -42,3 +42,29 @@ body{
 .mixitup-control-active{
   color: #000;
 }
+.breadcrumbs{
+  &__list{
+    display: flex;
+    justify-content: center;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #888c91;
+  }
+  &__item{
+    padding-right: 20px;
+    position: relative;
+    &::after{
+      content: '/';
+      position: absolute; 
+      right: 7px;
+      }
+    &:last-child{
+      padding-right: 0; 
+      &::after{
+        display: none;
+      }
+    }
+    }
+  }
+
