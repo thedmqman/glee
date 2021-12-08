@@ -572,6 +572,33 @@
     border: 2px solid #a3bbc8;
   }
 }
+.info {
+  &__inner {
+    padding: 120px 0 50px;
+    line-height: 30px;
+  }
+  &__subtittle {
+    @extend %rubik-500;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 28px;
+  }
+  &__list {
+    @extend %rubik-400;
+    padding-left: 35px;
+    list-style-type: decimal-leading-zero;
+    margin-bottom: 70px;
+  }
+  &__list-item {
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    @extend %rubik-400;
+    margin-bottom: 65px;
+  }
+}
+
 
 
 
