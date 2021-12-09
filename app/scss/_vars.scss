@@ -1,4 +1,4 @@
-
+$bg: #a3bbc8;
 
 %dmsans-400{
   font-family: 'DMSans-Regular', sans-serif;
@@ -23,10 +23,17 @@
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
-
 %rubik-500{
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
+}
+%rubik-700{
+  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
+}
+%poppins-600{
+  font-family: 'Poppins-SemiBold', sans-serif;
+  font-weight: 600;
 }
 %btn{
     @extend %rubik-500;
