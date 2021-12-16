@@ -1,12 +1,24 @@
 $(function () {
 
+  $('.product-list__item-btn').onClick(function () {
+    $('.product-list__item-btn').addClass('.product-list__item-btn--none');
+  });
+
   $('.filter-recent__stars').rateYo({
     starWidth: "12px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
   });
-
+  
+  $('.product-list__item-stars').rateYo({
+    starWidth: "16px",
+    spacing: "10px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+  });
+  
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     prefix: "$",

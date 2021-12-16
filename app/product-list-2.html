@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Product list 2</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo img">
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Home+
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Services
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Pages +
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                News
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/search.svg" alt="search icon">
+          </a>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/heart.png" alt="heart icon">
+            <span class="user-nav__num">0</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/cart.png" alt="cart icon">
+            <span class="user-nav__num">0</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <img class="user-nav__link-img" src="images/icons/user.png" alt="user icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <h2 class="top__tittle tittle">
+          Product list 2
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Product list 2
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-list product-list--list">
+      <div class="container">
+        <div class="product-list__inner">
+          <div class="product-list__filters filter">
+            <div class="filter-category">
+              <h3 class="filter__tittle">
+                CATEGORY
+              </h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox" checked>
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Chair
+                    </span>
+                    <img src="images/icons/filter-shape.svg" alt="filter-shape image">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Table
+                    </span>
+                    <img src="images/icons/filter-shape.svg" alt="filter-shape image">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Lamp
+                    </span>
+                    <img src="images/icons/filter-shape.svg" alt="filter-shape image">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Watch
+                    </span>
+                    <img src="images/icons/filter-shape.svg" alt="filter-shape image">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__checkbox">
+                    <span>
+                      Clook
+                    </span>
+                    <img src="images/icons/filter-shape.svg" alt="filter-shape image">
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter-price">
+              <h3 class="filter__tittle">
+                price
+              </h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="0" data-max="1000" data-to="500"
+                  data-from="100">
+                <label class="filter-price__label">
+                  <div class="filter-price__num">
+                    $<span class="filter-price__from"></span>
+                    $<span class="filter-price__to"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter-brand">
+              <h3 class="filter__tittle">
+                brand
+              </h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox" checked>
+                  <div class="filter-brand__checkbox">
+                    <span>
+                      RFL
+                    </span>
+                    <span class="filter-brand__checkbox-num">
+                      (10)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>
+                      Brothers
+                    </span>
+                    <span class="filter-brand__checkbox-num">
+                      (21)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>
+                      Regal
+                    </span>
+                    <span class="filter-brand__checkbox-num">
+                      (3)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>
+                      Nadia
+                    </span>
+                    <span class="filter-brand__checkbox-num">
+                      (14)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__checkbox">
+                    <span>
+                      Otobi
+                    </span>
+                    <span class="filter-brand__checkbox-num">
+                      (6)
+                    </span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <div class="filter-recent">
+              <h3 class="filter__tittle">
+                RECENT PRODUCTS
+              </h3>
+              <div class="filter-recent__items">
+                <div class="filter-recent__item">
+                  <div class="filter-recent__item-imgbox">
+                    <img class="filter-recent__item-img" src="images/products/recent/1.png" alt="recent produtct">
+                  </div>
+                  <div class="filter-recent__item-content">
+                    <h6 class="filter-recent__item-tittle">
+                      Pendant lamp
+                    </h6>
+                    <div class="filter-recent__stars" data-rateyo-rating="4"></div>
+                    <p class="filter-recent__item-price">
+                      23$
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-recent__item">
+                  <div class="filter-recent__item-imgbox">
+                    <img class="filter-recent__item-img" src="images/products/recent/2.png" alt="recent produtct">
+                  </div>
+                  <div class="filter-recent__item-content">
+                    <h6 class="filter-recent__item-tittle">
+                      Pendant lamp
+                    </h6>
+                    <div class="filter-recent__stars" data-rateyo-rating="4"></div>
+                    <p class="filter-recent__item-price">
+                      23$
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-recent__item">
+                  <div class="filter-recent__item-imgbox">
+                    <img class="filter-recent__item-img" src="images/products/recent/3.png" alt="recent produtct">
+                  </div>
+                  <div class="filter-recent__item-content">
+                    <h6 class="filter-recent__item-tittle">
+                      Pendant lamp
+                    </h6>
+                    <div class="filter-recent__stars" data-rateyo-rating="4"></div>
+                    <p class="filter-recent__item-price">
+                      23$
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-list__content">
+            <div class="product-list__items">
+              <div class="product-list__item">
+                <div class="product-list__item-imgbox">
+                  <img class="product-list__item-img" src="images/products/list/1.png" alt="product image">
+                </div>
+                <div class="product-list__item-content">
+                  <h5 class="product-list__item-tittle">
+                    Wooden radio
+                  </h5>
+                  <div class="product-list__item-stars" data-rateyo-rating="4"></div>
+                  <p class="product-list__item-price">
+                    23$
+                  </p>
+                  <p class="product-list__item-descr">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <div class="product-list__item-linkbox">
+                    <button class="product-list__item-btn">
+                      Add to cart
+                    </button>
+                    <a class="product-list__item-link--cart" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px"
+                        height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.666 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.672 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.998 6.484,19.998 C5.466,19.998 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.993 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.998 C18.109,19.998 18.055,19.998 18.014,19.998 C17.051,19.998 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-list__item-link--like" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px"
+                        height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.015,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.856 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.465 4.385,13.532 6.044,14.906 C7.749,16.316 9.994,17.998 11.009,17.998 C12.041,17.998 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.479 20.719,10.157 C21.366,9.174 22.095,7.791 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.673 C10.669,16.638 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.430 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.179 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.160 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.146 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list__item">
+                <div class="product-list__item-imgbox">
+                  <img class="product-list__item-img" src="images/products/list/2.png" alt="product image">
+                </div>
+                <div class="product-list__item-content">
+                  <h5 class="product-list__item-tittle">
+                    Wooden radio
+                  </h5>
+                  <div class="product-list__item-stars" data-rateyo-rating="4"></div>
+                  <p class="product-list__item-price">
+                    23$
+                  </p>
+                  <p class="product-list__item-descr">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <div class="product-list__item-linkbox">
+                    <button class="product-list__item-btn">
+                      Add to cart
+                    </button>
+                    <a class="product-list__item-link--cart" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.666 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.672 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.998 6.484,19.998 C5.466,19.998 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.993 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.998 C18.109,19.998 18.055,19.998 18.014,19.998 C17.051,19.998 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-list__item-link--like" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.015,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.856 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.465 4.385,13.532 6.044,14.906 C7.749,16.316 9.994,17.998 11.009,17.998 C12.041,17.998 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.479 20.719,10.157 C21.366,9.174 22.095,7.791 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.673 C10.669,16.638 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.430 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.179 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.160 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.146 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list__item">
+                <div class="product-list__item-imgbox">
+                  <img class="product-list__item-img" src="images/products/list/3.png" alt="product image">
+                </div>
+                <div class="product-list__item-content">
+                  <h5 class="product-list__item-tittle">
+                    Wooden radio
+                  </h5>
+                  <div class="product-list__item-stars" data-rateyo-rating="4"></div>
+                  <p class="product-list__item-price">
+                    23$
+                  </p>
+                  <p class="product-list__item-descr">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <div class="product-list__item-linkbox">
+                    <button class="product-list__item-btn">
+                      Add to cart
+                    </button>
+                    <a class="product-list__item-link--cart" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.666 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.672 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.998 6.484,19.998 C5.466,19.998 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.993 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.998 C18.109,19.998 18.055,19.998 18.014,19.998 C17.051,19.998 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-list__item-link--like" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.015,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.856 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.465 4.385,13.532 6.044,14.906 C7.749,16.316 9.994,17.998 11.009,17.998 C12.041,17.998 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.479 20.719,10.157 C21.366,9.174 22.095,7.791 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.673 C10.669,16.638 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.430 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.179 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.160 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.146 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-list__item">
+                <div class="product-list__item-imgbox">
+                  <img class="product-list__item-img" src="images/products/list/4.png" alt="product image">
+                </div>
+                <div class="product-list__item-content">
+                  <h5 class="product-list__item-tittle">
+                    Wooden radio
+                  </h5>
+                  <div class="product-list__item-stars" data-rateyo-rating="4"></div>
+                  <p class="product-list__item-price">
+                    23$
+                  </p>
+                  <p class="product-list__item-descr">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                    veniam, quis nostrud exercitation
+                  </p>
+                  <div class="product-list__item-linkbox">
+                    <button class="product-list__item-btn">
+                      Add to cart
+                    </button>
+                    <a class="product-list__item-link--cart" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="20px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.934,5.216 L18.217,13.776 C18.082,14.075 17.797,14.264 17.471,14.264 L7.257,14.264 C6.891,14.264 6.565,14.020 6.470,13.666 L3.147,1.629 L0.814,1.629 C0.366,1.629 -0.000,1.262 -0.000,0.814 C-0.000,0.365 0.366,-0.002 0.814,-0.002 L3.757,-0.002 C4.124,-0.002 4.449,0.243 4.544,0.596 L7.867,12.634 L16.929,12.634 L19.940,5.705 L9.902,5.705 C9.454,5.705 9.088,5.338 9.088,4.889 C9.088,4.440 9.454,4.074 9.902,4.074 L21.188,4.074 C21.459,4.074 21.717,4.211 21.866,4.440 C22.015,4.672 22.043,4.957 21.934,5.216 ZM6.484,16.303 C7.501,16.303 8.329,17.131 8.329,18.150 C8.329,19.169 7.501,19.998 6.484,19.998 C5.466,19.998 4.639,19.169 4.639,18.150 C4.639,17.131 5.466,16.303 6.484,16.303 ZM17.892,16.303 C18.909,16.235 19.791,17.009 19.859,18.015 C19.886,18.517 19.737,18.993 19.411,19.360 C19.085,19.740 18.638,19.958 18.149,19.998 C18.109,19.998 18.055,19.998 18.014,19.998 C17.051,19.998 16.250,19.238 16.183,18.273 C16.115,17.267 16.874,16.371 17.892,16.303 Z" />
+                      </svg>
+                    </a>
+                    <a class="product-list__item-link--like" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="18px">
+                        <path fill-rule="evenodd" fill="rgb(163, 187, 200)"
+                          d="M21.990,5.820 C21.907,4.269 21.250,2.813 20.141,1.720 C19.015,0.610 17.545,-0.001 16.002,-0.001 C13.691,-0.001 12.054,1.784 11.175,2.744 C11.125,2.798 11.071,2.856 11.019,2.913 C10.991,2.882 10.963,2.849 10.936,2.819 C10.132,1.903 8.460,-0.001 5.998,-0.001 C4.455,-0.001 2.985,0.610 1.859,1.720 C0.750,2.813 0.093,4.269 0.010,5.820 C-0.072,7.361 0.320,8.700 1.281,10.158 C2.142,11.465 4.385,13.532 6.044,14.906 C7.749,16.316 9.994,17.998 11.009,17.998 C12.041,17.998 14.278,16.319 15.974,14.912 C17.620,13.545 19.850,11.479 20.719,10.157 C21.366,9.174 22.095,7.791 21.990,5.820 ZM19.614,9.430 C18.982,10.391 17.202,12.166 15.183,13.848 C12.777,15.852 11.352,16.643 11.011,16.673 C10.669,16.638 9.241,15.841 6.823,13.831 C4.793,12.145 3.010,10.377 2.386,9.430 C1.591,8.223 1.266,7.132 1.332,5.891 C1.467,3.372 3.560,1.322 5.998,1.322 C7.861,1.322 9.214,2.864 9.941,3.692 C10.369,4.179 10.604,4.447 11.000,4.447 C11.409,4.447 11.672,4.160 12.151,3.638 C12.945,2.772 14.273,1.322 16.002,1.322 C18.440,1.322 20.533,3.372 20.668,5.891 C20.735,7.146 20.420,8.204 19.614,9.430 Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    1
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active" href="#">
+                    2
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#">
+                    3
+                  </a>
+                </li>
+              </ul>
+              <a class="pagination__next" href="#">
+                Next
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="bottom">
+      <div class="partners ">
+        <div class="container">
+          <ul class="partners__list--small partners__list">
+            <li class="partners__logo">
+              <img src="images/partners/1.png" alt="partners logo">
+            </li>
+            <li class="partners__logo">
+              <img src="images/partners/2.png" alt="partners logo">
+            </li>
+            <li class="partners__logo">
+              <img src="images/partners/3.png" alt="partners logo">
+            </li>
+            <li class="partners__logo">
+              <img src="images/partners/4.png" alt="partners logo">
+            </li>
+            <li class="partners__logo">
+              <img src="images/partners/5.png" alt="partners logo">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__item">
+          <a class="logo " href="#">
+            <img class="logo__img footer-top__img" src="images/logo.png" alt="logo img">
+          </a>
+          <a class="footer-top__adress" href="#">
+            ADDRESS: 4772 Wines Lane
+            Houston, TX 77032
+          </a>
+          <a class="footer-top__phone" href="tel:+8323475843">
+            Telephone: +832-347-5843
+          </a>
+          <a class="footer-top__mail" href="mailto:contact@Glee.com">
+            Email: contact@Glee.com
+          </a>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__tittle">
+            Services
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                About us
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Return Policy
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Our Blog
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Terms & Condition
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item">
+          <h6 class="footer-top__tittle">
+            Account
+          </h6>
+          <ul class="footer-top__list">
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Your Account
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Checkout
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Login
+              </a>
+            </li>
+            <li class="footer-top__items"><a class="footer-top__link" href="#">
+                Register
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-top__item-form">
+          <h6 class="footer-top__tittle">
+            newsletter
+          </h6>
+          <p class="footer-top__text">
+            Subscribe by our newsletter and get
+            update protidin.
+          </p>
+          <form class="footer-top__form" action="#">
+            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+            <button class="footer-top__form-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__copy">
+          ©2020 CopyRight Example. All rights reserved.
+        </div>
+        <nav class="footer-bottom__menu">
+          <ul class="footer-bottom__menu-list">
+            <li class="footer-bottom__menu-item"><a class="footer-bottom__menu-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item"><a class="footer-bottom__menu-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item"><a class="footer-bottom__menu-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="footer-bottom__menu-item"><a class="footer-bottom__menu-link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
